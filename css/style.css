@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+.container{
+    width: 1250px;
+    margin: auto;
+}
+
+/*
+******* Media Query For responsiveness
+*/
+
+@media (max-width:767px){ /* for Xsmall screens Rules */
+    .container{
+        width: 100%;
+    }
+    p,span,h1,h2,h3,h4,h5,h6{
+        text-align: center;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){/* for Small Screens Rules*/
+    .container{
+        width: 750px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px){/*for Meduim Screens Rules*/
+    .container{
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px){/*Large Screens Rules*/
+
+}
+
+/**
+*****End Of media Query
+**/
+.custom-btn{
+    border: none;
+    color: #FFF;
+    font-size: 25px;
+    padding: 10px 30px;
+    background: #16A085;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+@media (max-width:767px){ /*Xsmall Sxreens*/
+    .custom-btn{
+        display: block;
+        margin: auto;
+    }
+}
+
+.clear{
+    clear: both;
+}
+
+.custom-btn:hover{
+    background-color: #FF7777;
+}
+
+ul{
+    list-style: none;
+}
+
+/*****  Header *****/
+header{
+    background-image: url(../images/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+    text-align: center;
+    background-attachment: fixed;
+}
+header nav{
+padding-top: 50px;
+}
+header nav ul{
+    margin: auto;
+}
+header nav ul li{
+    display: inline-block;
+    margin: 0 70px;
+}
+
+header nav ul li a{
+    color: #FFF;
+    text-decoration: none;
+}
+header .title{
+    margin-top: 170px;
+}
+header .title span{
+    display: block;
+}
+header .title button{
+    margin-top: 50px;
+   
+}
+
+
+
+header ul.social{
+    margin-top: 150px;
+}
+header ul.social li {
+    display: inline-block;
+}
+header ul.social li a{
+    color: #FFF;
+}
+header ul.social li a i{
+    margin: 20px 10px;
+}
+
+@media(min-width:992px) and (max-width:1199px){/*Meduim Screens*/
+    header nav ul li{
+        margin: 0 50px;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px){/*Small Screens*/
+    header nav ul li{
+        margin: 0 30px;
+    }
+}
+
+@media (max-width:767px){ /* Xsmall screens*/
+    header nav ul li{
+        margin: 20px 0;
+        display: block;
+    }
+    header .title{
+        margin-top: 100px;
+    }
+}
+
+
+/***
+******End Of Header Section
+***/
+
+
+/***
+**************************** Start Of Life section 
+****/
+.life{
+    padding: 100px 0;
+    background-image: url(../images/download.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:auto;
+}
+.life .head-section{
+    width: 400px;
+}
+.head-section h2{
+    color: #16A085;
+    margin-bottom: 40px;
+}
+.head-section p{
+    font-size: 1.2em;
+    color: #4b4a4a;
+    margin-bottom: 40px;
+    line-height: 29px;
+}
+.head-section p span{
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width:767px){ /* for Xsmall screens Rules */
+    .life .head-section{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px){/*Meduim Screens */
+    .life{
+        margin: auto;
+        text-align: center;
+    }
+}
+
+/**
+************************End Of Life Section
+**/
+
+
+/**
+*************************Start Of Design Section
+**/
+
+.design{
+    padding-top: 100px;
+}
+.design .content{
+    float: left;
+    width: 50%;
+}
+#capital{
+    text-transform: uppercase;
+}
+.design .content img{
+    margin-bottom: 8px;
+}
+
+@media(max-width:590px){
+    .design .content{
+        width: 100%;
+        float: none;
+    }
+    .design .content img{
+        width: 60%;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .design{
+        padding: 100px 0;
+    }
+}
+/**
+*******************End of Design Section
+**/
+
+
+/**
+************************ Start of work section
+**/
+
+.work{
+    background-color: #f5f6f7;
+    padding: 100px 0;
+}
+.work .box{
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+}
+.work .box h3{
+    color: #373737;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.work .box p{
+    color: #D0C3C4;
+    /*width: 55%;*/
+    width: 200px;
+    margin: auto;
+}
+@media (max-width:991px){
+    .work .box{
+        width: 50%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:700px){
+    .work{
+        padding: 50px 0;
+    }
+    .work .box{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .work .box img{
+        width: 70%;
+    }
+}
+
+/**
+********End Of Work Section
+******/
+
+
+/**
+******** Start Of Subscribe Section
+**/
+
+.subscribe{
+    background-image: url(../images/part22.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    color: #FFF;
+    margin: auto;
+}
+
+.subscribe form{
+    padding-top: 50vh;
+}
+.subscribe form h2{
+    text-transform: uppercase;
+    margin-bottom: 20px; 
+}
+.subscribe form input{
+    padding: 0 10px;
+    height: 50px;
+    width: 350px;
+    border: none;
+    font-size: 1.1em;
+} 
+.subscribe form a{
+    color: #FFF;
+}
+.subscribe form a i{
+    width: 50px;
+    height: 50px;
+    background-color: #16A085;
+    line-height: 50px;
+    margin-left: -4.13px;
+    border-bottom: 1.5px solid #16A085;
+}
+
+@media (max-width:515px){
+    .subscribe form input,
+    .subscribe form a i{
+        width: 80%;
+        transition: all 0.3s ease-in-out;
+    }
+    .subscribe form a{
+        display: block;
+        margin: 4px;
+    }
+    .subscribe form a i:hover{
+        background-color: #FF7777;
+    }
+}
+/**
+***********End Of Subscribe Section
+***/
+
+/**
+*******Start Of Download Section
+**/
+.download{
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f5f6f7;
+}
+
+.download h2{
+    margin-bottom: 20px;
+    color: #3D3835;
+    text-transform: uppercase;
+}
+.download p{
+    color: #CCC3D6;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.download button{
+    margin: 0 20px;
+}
+.download button i{
+    margin: 0 10px;
+}
+
+@media (max-width:767px){
+    .download{
+        width: 100%;
+    }
+    .download button{
+        margin: 20px auto;
+        width: 60%;
+    }
+}
+
+@media (max-width:410px){
+    .download button{
+        max-width: 100%;
+    }
+}
+
+/** 81  --56  **/
+/**
+*******End Of Download Section
+**/
+
+
+/**
+************ STart of Footer Section
+*********/
+
+footer{
+    padding: 50px 0;
+}
+footer .links{
+    float: left;
+    font-weight: bold;
+}
+footer .links ul{
+
+}
+footer .links ul li{
+    display: inline-block;
+}
+footer .links ul li:after{
+    content: "|";
+    margin: 0 5px;
+}
+footer .links ul li:last-child:after{
+    content: none;
+}
+footer .links ul li a{
+    color: #000204;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+footer .links p{
+
+}
+footer .logo{
+    float: right;
+}
+footer .logo img{
+
+}
+
+@media (max-width:490px){
+    footer .links,
+    footer .logo{
+        float: none;
+        margin:10px 0;
+    }
+    footer .links ul {
+        margin:20px 0;
+        text-align: center;
+    }
+
+    footer .logo img{
+        display: block;
+        margin: auto;
+    }
+}
